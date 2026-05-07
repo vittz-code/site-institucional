@@ -3,91 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossos Serviços — Soluções Estratégicas</title>
+    <title>Serviços — Empresa de Serviços</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="cabecalho">
-        <div class="conteiner">
-            <div class="cabecalho-conteudo">
-                <a href="index.html" class="logo-texto">EMPRESA DE SERVIÇOS</a>
-                <nav class="nav-desktop">
-                    <a href="index.html">Início</a>
-                    <a href="portfolio.html">Portfólio</a>
-                    <button class="btn-nav btn-abrir-contato">Solicitar Proposta</button>
-                </nav>
+
+    <header class="nav" id="nav">
+        <div class="container">
+            <div class="nav__inner">
+                <a href="index.html" class="nav__logo">Empresa de Serviços</a>
+                <div class="nav__right">
+                    <ul class="nav__links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="portfolio.html">Portfólio</a></li>
+                        <li><a href="index.html#contato">Contato</a></li>
+                    </ul>
+                    <a href="index.html#contato" class="btn btn--primary btn--sm nav__cta">Falar conosco →</a>
+                    <button class="nav__hamburger" id="navHamburger" aria-label="Abrir menu" aria-expanded="false">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
             </div>
+        </div>
+        <div class="nav__drawer" id="navDrawer">
+            <a href="index.html">Início</a>
+            <a href="portfolio.html">Portfólio</a>
+            <a href="index.html#contato">Contato</a>
+            <a href="index.html#contato" class="btn btn--primary btn--sm" style="text-align:center;margin-top:.5rem">Falar conosco →</a>
         </div>
     </header>
 
     <main>
-        <section class="pagina-titulo revelar">
-            <div class="conteiner"><h1>Nossas Soluções</h1></div>
-        </section>
 
-        <section class="detalhe-servico revelar">
-            <div class="conteiner">
-                <div class="detalhe-grid">
-                    <div class="detalhe-img"></div>
-                    <div class="detalhe-texto">
-                        <h2>Consultoria Estratégica</h2>
-                        <p>Começamos entendendo de verdade onde sua empresa está e onde quer chegar. Mapeamos processos, identificamos gargalos e construímos um plano de ação realista — com prioridades claras, responsáveis definidos e metas mensuráveis desde o primeiro dia.</p>
-                        <p>Não entregamos relatório de gaveta. Ficamos ao lado da equipe até os resultados aparecerem.</p>
-                        <button class="btn btn-primario btn-contratar-servico" data-service="Consultoria">Solicitar Proposta</button>
-                    </div>
-                </div>
+        <section class="page-hero">
+            <div class="container" data-reveal>
+                <span class="page-hero__tag">O que fazemos</span>
+                <h1 class="page-hero__title">Soluções digitais que geram resultado.</h1>
+                <p class="page-hero__desc">Não vendemos pacotes prontos. Cada projeto começa do zero — diagnóstico honesto, estratégia personalizada e execução acompanhada de perto.</p>
             </div>
         </section>
 
-        <section class="detalhe-servico revelar">
-            <div class="conteiner">
-                <div class="detalhe-grid detalhe-grid--invertido">
-                    <div class="detalhe-texto">
-                        <h2>Gestão de Projetos</h2>
-                        <p>Projetos falham por falta de método, não de intenção. Aplicamos frameworks ágeis e tradicionais de acordo com o contexto — garantindo visibilidade do progresso, gestão de riscos e comunicação clara entre todas as partes.</p>
-                        <p>Entregamos no prazo e no orçamento combinados, com documentação completa e transição sem atrito.</p>
-                        <button class="btn btn-primario btn-contratar-servico" data-service="Projetos">Solicitar Proposta</button>
+        <section style="padding:0">
+            <div class="container">
+
+                <div class="service-detail">
+                    <div class="service-detail__inner" data-reveal>
+                        <div class="service-detail__num">01</div>
+                        <div>
+                            <h2 class="service-detail__title">Sites & Lojas Virtuais</h2>
+                            <p class="service-detail__desc">Site bom não é o que fica bonito na tela do designer — é o que converte. Desenvolvemos com foco em velocidade, experiência do usuário e resultados mensuráveis.</p>
+                            <ul class="service-detail__list">
+                                <li>Sites institucionais responsivos e otimizados</li>
+                                <li>Lojas virtuais com gestão de produtos e pagamento</li>
+                                <li>Landing pages de alta conversão</li>
+                                <li>Integração com ferramentas de análise e CRM</li>
+                            </ul>
+                            <a href="index.html#contato" class="btn btn--primary">Solicitar proposta →</a>
+                        </div>
                     </div>
-                    <div class="detalhe-img"></div>
                 </div>
+
+                <div class="service-detail">
+                    <div class="service-detail__inner" data-reveal>
+                        <div class="service-detail__num">02</div>
+                        <div>
+                            <h2 class="service-detail__title">Design & Identidade</h2>
+                            <p class="service-detail__desc">Antes de vender o produto, você vende a percepção. Uma identidade visual coesa e bem aplicada comunica profissionalismo antes de qualquer palavra.</p>
+                            <ul class="service-detail__list">
+                                <li>Criação de identidade visual completa</li>
+                                <li>Manual de marca com diretrizes de uso</li>
+                                <li>Design de interfaces (UI/UX)</li>
+                                <li>Peças e templates para redes sociais</li>
+                            </ul>
+                            <a href="index.html#contato" class="btn btn--primary">Solicitar proposta →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-detail">
+                    <div class="service-detail__inner" data-reveal>
+                        <div class="service-detail__num">03</div>
+                        <div>
+                            <h2 class="service-detail__title">Marketing de Conteúdo</h2>
+                            <p class="service-detail__desc">Aparecer uma vez não basta. Construímos presença digital consistente que atrai o público certo, mantém o interesse e converte ao longo do tempo — sem atalhos.</p>
+                            <ul class="service-detail__list">
+                                <li>Estratégia de conteúdo para blog e redes sociais</li>
+                                <li>SEO técnico e criação de conteúdo otimizado</li>
+                                <li>Campanhas de tráfego pago (Google e Meta Ads)</li>
+                                <li>Relatórios mensais com métricas e ajustes</li>
+                            </ul>
+                            <a href="index.html#contato" class="btn btn--primary">Solicitar proposta →</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <section class="detalhe-servico revelar">
-            <div class="conteiner">
-                <div class="detalhe-grid">
-                    <div class="detalhe-img"></div>
-                    <div class="detalhe-texto">
-                        <h2>Transformação Digital</h2>
-                        <p>Digitalizar por digitalizar não adianta. Identificamos os processos que mais consomem tempo e dinheiro e implementamos ferramentas que a sua equipe realmente vai usar — com treinamento, suporte e acompanhamento pós-implantação.</p>
-                        <p>O resultado: operação mais rápida, menos erro manual e dados confiáveis para decisões melhores.</p>
-                        <button class="btn btn-primario btn-contratar-servico" data-service="Digital">Solicitar Proposta</button>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
-    <div id="modalContato" class="modal">
-        <div class="modal-conteudo modal-conteudo-contato">
-            <button class="fechar-modal fechar-contato">&times;</button>
-            <div class="modal-header-logo">EMPRESA DE SERVIÇOS</div>
-            <h3>Solicitar Proposta</h3>
-            <form class="form-contato" id="formContato">
-                <input type="text" placeholder="Nome" required>
-                <input type="tel" placeholder="Telefone" required>
-                <select id="selectServicoModal" required>
-                    <option value="" disabled selected>Selecione o serviço...</option>
-                    <option value="Consultoria">Consultoria Estratégica</option>
-                    <option value="Projetos">Gestão de Projetos</option>
-                    <option value="Digital">Transformação Digital</option>
-                </select>
-                <textarea placeholder="Descreva seu desafio ou objetivo" rows="3"></textarea>
-                <button type="submit" class="btn btn-primario w-100">Enviar Mensagem</button>
-            </form>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div>
+                    <span class="footer__logo">Empresa de Serviços</span>
+                    <p class="footer__desc">Criamos experiências digitais que convertem visitantes em clientes, com estratégia, design e tecnologia.</p>
+                </div>
+                <div>
+                    <span class="footer__col-title">Navegação</span>
+                    <ul class="footer__links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="portfolio.html">Portfólio</a></li>
+                        <li><a href="index.html#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="footer__col-title">Contato</span>
+                    <div class="footer__contact">
+                        <span>contato@empresa.com.br</span>
+                        <span>(00) 00000-0000</span>
+                        <span>Cidade, XX</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span class="footer__copy">© <span id="ano"></span> Empresa de Serviços. Todos os direitos reservados.</span>
+            </div>
         </div>
-    </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>

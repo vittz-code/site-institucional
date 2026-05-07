@@ -3,99 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casos de Sucesso — Soluções Estratégicas</title>
+    <title>Portfólio — Empresa de Serviços</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="cabecalho">
-        <div class="conteiner">
-            <div class="cabecalho-conteudo">
-                <a href="index.html" class="logo-texto">EMPRESA DE SERVIÇOS</a>
-                <nav class="nav-desktop">
-                    <a href="index.html">Início</a>
-                    <a href="servicos.html">Serviços</a>
-                    <button class="btn-nav btn-abrir-contato">Solicitar Proposta</button>
-                </nav>
+
+    <header class="nav" id="nav">
+        <div class="container">
+            <div class="nav__inner">
+                <a href="index.html" class="nav__logo">Empresa de Serviços</a>
+                <div class="nav__right">
+                    <ul class="nav__links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="index.html#contato">Contato</a></li>
+                    </ul>
+                    <a href="index.html#contato" class="btn btn--primary btn--sm nav__cta">Falar conosco →</a>
+                    <button class="nav__hamburger" id="navHamburger" aria-label="Abrir menu" aria-expanded="false">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
             </div>
+        </div>
+        <div class="nav__drawer" id="navDrawer">
+            <a href="index.html">Início</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="index.html#contato">Contato</a>
+            <a href="index.html#contato" class="btn btn--primary btn--sm" style="text-align:center;margin-top:.5rem">Falar conosco →</a>
         </div>
     </header>
 
     <main>
-        <section class="pagina-titulo revelar">
-            <div class="conteiner"><h1>Casos de Sucesso</h1></div>
+
+        <section class="page-hero">
+            <div class="container" data-reveal>
+                <span class="page-hero__tag">Nosso trabalho</span>
+                <h1 class="page-hero__title">Projetos que geram resultado.</h1>
+                <p class="page-hero__desc">Uma amostra do que desenvolvemos para clientes de diferentes segmentos. Cada projeto tem objetivos, restrições e soluções diferentes — e é assim que gostamos.</p>
+            </div>
         </section>
 
-        <section class="portfolio">
-            <div class="conteiner">
-                <div class="portfolio-grid" style="margin-top: 3rem;">
-                    <div class="cartao-portfolio revelar">
-                        <div class="portfolio-imagem"></div>
-                        <div class="portfolio-conteudo">
-                            <h3>Reestruturação Operacional</h3>
-                            <p>Redesenho de processos internos com implementação de indicadores de desempenho e redução significativa de retrabalho.</p>
+        <section class="portfolio-section">
+            <div class="container">
+                <div class="portfolio-grid" data-reveal>
+
+                    <div class="portfolio-card">
+                        <div class="portfolio-card__img"></div>
+                        <div class="portfolio-card__body">
+                            <span class="portfolio-card__index">01</span>
+                            <h3 class="portfolio-card__title">Loja Virtual — Moda</h3>
+                            <p class="portfolio-card__desc">E-commerce com catálogo dinâmico, checkout integrado e painel de pedidos para uma loja de roupas femininas.</p>
+                            <div class="portfolio-card__tags">
+                                <span class="portfolio-card__tag">E-commerce</span>
+                                <span class="portfolio-card__tag">Design</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="cartao-portfolio revelar">
-                        <div class="portfolio-imagem"></div>
-                        <div class="portfolio-conteudo">
-                            <h3>Expansão de Mercado</h3>
-                            <p>Estratégia de entrada em novo segmento com análise competitiva, roadmap de execução e acompanhamento contínuo.</p>
+
+                    <div class="portfolio-card">
+                        <div class="portfolio-card__img"></div>
+                        <div class="portfolio-card__body">
+                            <span class="portfolio-card__index">02</span>
+                            <h3 class="portfolio-card__title">Site Institucional — Clínica</h3>
+                            <p class="portfolio-card__desc">Site completo com agendamento online, apresentação da equipe e blog de conteúdo para clínica médica.</p>
+                            <div class="portfolio-card__tags">
+                                <span class="portfolio-card__tag">Institucional</span>
+                                <span class="portfolio-card__tag">UI/UX</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="cartao-portfolio revelar">
-                        <div class="portfolio-imagem"></div>
-                        <div class="portfolio-conteudo">
-                            <h3>Transformação Digital</h3>
-                            <p>Plataforma de gestão integrada que centralizou dados e aumentou a produtividade da equipe operacional.</p>
+
+                    <div class="portfolio-card">
+                        <div class="portfolio-card__img"></div>
+                        <div class="portfolio-card__body">
+                            <span class="portfolio-card__index">03</span>
+                            <h3 class="portfolio-card__title">Identidade Visual — Startup</h3>
+                            <p class="portfolio-card__desc">Criação de identidade visual completa — logo, paleta, tipografia e manual de marca — para startup de tecnologia.</p>
+                            <div class="portfolio-card__tags">
+                                <span class="portfolio-card__tag">Branding</span>
+                                <span class="portfolio-card__tag">Design</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="cartao-portfolio revelar">
-                        <div class="portfolio-imagem"></div>
-                        <div class="portfolio-conteudo">
-                            <h3>Diagnóstico Organizacional</h3>
-                            <p>Análise da estrutura, processos e cultura da empresa com relatório executivo e plano de ação priorizado.</p>
+
+                    <div class="portfolio-card">
+                        <div class="portfolio-card__img"></div>
+                        <div class="portfolio-card__body">
+                            <span class="portfolio-card__index">04</span>
+                            <h3 class="portfolio-card__title">Landing Page — Curso Online</h3>
+                            <p class="portfolio-card__desc">Página de vendas otimizada para conversão, com copy persuasivo, depoimentos e integração com plataforma de pagamento.</p>
+                            <div class="portfolio-card__tags">
+                                <span class="portfolio-card__tag">Landing Page</span>
+                                <span class="portfolio-card__tag">Conversão</span>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="portfolio-card">
+                        <div class="portfolio-card__img"></div>
+                        <div class="portfolio-card__body">
+                            <span class="portfolio-card__index">05</span>
+                            <h3 class="portfolio-card__title">Blog + SEO — Escritório Jurídico</h3>
+                            <p class="portfolio-card__desc">Estratégia de conteúdo e SEO com produção mensal de artigos que aumentaram o tráfego orgânico em 4 meses.</p>
+                            <div class="portfolio-card__tags">
+                                <span class="portfolio-card__tag">SEO</span>
+                                <span class="portfolio-card__tag">Conteúdo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="portfolio-card__img"></div>
+                        <div class="portfolio-card__body">
+                            <span class="portfolio-card__index">06</span>
+                            <h3 class="portfolio-card__title">Dashboard — SaaS Interno</h3>
+                            <p class="portfolio-card__desc">Interface administrativa para sistema de gestão interno, com foco em usabilidade e clareza de informação.</p>
+                            <div class="portfolio-card__tags">
+                                <span class="portfolio-card__tag">UI/UX</span>
+                                <span class="portfolio-card__tag">Dashboard</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <section class="contato-pagina revelar">
-            <div class="conteiner">
-                <div class="contato-wrapper">
-                    <h2>Seu negócio pode ser o próximo caso de sucesso.</h2>
-                    <button class="btn btn-primario w-100 btn-abrir-contato">Falar com um Especialista</button>
-                </div>
-            </div>
-        </section>
     </main>
 
-    <div id="modalContato" class="modal">
-        <div class="modal-conteudo modal-conteudo-contato">
-            <button class="fechar-modal fechar-contato">&times;</button>
-            <div class="modal-header-logo">EMPRESA DE SERVIÇOS</div>
-            <h3>Solicitar Proposta</h3>
-            <form class="form-contato" id="formContato">
-                <input type="text" placeholder="Nome" required>
-                <input type="tel" placeholder="Telefone" required>
-                <input type="email" placeholder="Email (Opcional)">
-                <select id="selectServicoModal" required>
-                    <option value="" disabled selected>Selecione uma opção</option>
-                    <option value="Consultoria">Consultoria Estratégica</option>
-                    <option value="Projetos">Gestão de Projetos</option>
-                    <option value="Digital">Transformação Digital</option>
-                    <option value="Outro">Outro / Não sei ainda</option>
-                </select>
-                <textarea placeholder="Descreva seu desafio ou objetivo" rows="3"></textarea>
-                <button type="submit" class="btn btn-primario w-100">Enviar Mensagem</button>
-            </form>
-        </div>
-    </div>
-
-    <footer class="rodape">
-        <div class="conteiner">
-            <div class="rodape-inferior"><p>&copy; <span id="ano"></span> Empresa de Serviços.</p></div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div>
+                    <span class="footer__logo">Empresa de Serviços</span>
+                    <p class="footer__desc">Criamos experiências digitais que convertem visitantes em clientes, com estratégia, design e tecnologia.</p>
+                </div>
+                <div>
+                    <span class="footer__col-title">Navegação</span>
+                    <ul class="footer__links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="index.html#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="footer__col-title">Contato</span>
+                    <div class="footer__contact">
+                        <span>contato@empresa.com.br</span>
+                        <span>(00) 00000-0000</span>
+                        <span>Cidade, XX</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span class="footer__copy">© <span id="ano"></span> Empresa de Serviços. Todos os direitos reservados.</span>
+            </div>
         </div>
     </footer>
 

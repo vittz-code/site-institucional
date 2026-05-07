@@ -3,215 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soluções Estratégicas — Consultoria e Projetos</title>
+    <title>Empresa de Serviços — Soluções Digitais</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="cabecalho">
-        <div class="conteiner">
-            <div class="cabecalho-conteudo">
-                <a href="index.html" class="logo-texto">EMPRESA DE SERVIÇOS</a>
-                <nav class="nav-desktop">
-                    <a href="servicos.html">Serviços</a>
-                    <a href="portfolio.html">Portfólio</a>
-                    <a href="#sobre">Sobre</a>
-                    <button class="btn-nav btn-abrir-contato">Falar com Especialista</button>
-                </nav>
-                <button class="menu-toggle" id="menuToggle">☰</button>
+    <header class="nav" id="nav">
+        <div class="container">
+            <div class="nav__inner">
+                <a href="index.html" class="nav__logo">Empresa de Serviços</a>
+                <div class="nav__right">
+                    <ul class="nav__links">
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="portfolio.html">Portfólio</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                    <a href="#contato" class="btn btn--primary btn--sm nav__cta">Falar conosco →</a>
+                    <button class="nav__hamburger" id="navHamburger" aria-label="Abrir menu" aria-expanded="false">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
             </div>
-            <nav class="nav-mobile" id="navMobile">
-                <a href="servicos.html">Serviços</a>
-                <a href="portfolio.html">Portfólio</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#" class="btn-abrir-contato">Solicitar Orçamento</a>
-            </nav>
+        </div>
+        <div class="nav__drawer" id="navDrawer">
+            <a href="servicos.html">Serviços</a>
+            <a href="portfolio.html">Portfólio</a>
+            <a href="#contato">Contato</a>
+            <a href="#contato" class="btn btn--primary btn--sm" style="text-align:center;margin-top:.5rem">Falar conosco →</a>
         </div>
     </header>
 
     <main>
+
+        <!-- HERO -->
         <section class="hero">
-            <div class="conteiner">
-                <div class="hero-conteudo revelar">
-                    <span class="hero-subtitulo">CONSULTORIA ESTRATÉGICA</span>
-                    <h1>Transformamos Desafios em <span class="destaque">Resultados</span></h1>
-                    <p>Consultoria especializada em planejamento estratégico, gestão de projetos e transformação digital. Do diagnóstico à execução — entregamos resultado, não só relatório.</p>
-                    <div class="hero-botoes">
-                        <button class="btn btn-primario btn-abrir-contato">Falar com Especialista →</button>
-                        <a href="servicos.html" class="btn btn-secundario">Ver Soluções</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="servicos">
-            <div class="conteiner">
-                <div class="secao-cabecalho revelar">
-                    <h2>O que fazemos</h2>
-                    <p>Soluções sob medida para empresas que querem crescer com estratégia, método e execução consistente.</p>
-                </div>
-                <div class="servicos-grid">
-                    <div class="cartao-servico revelar">
-                        <div class="servico-icone">📊</div>
-                        <h3>Consultoria Estratégica</h3>
-                        <p>Diagnóstico completo do seu negócio com plano de ação claro, priorizado e com métricas de acompanhamento definidas desde o início.</p>
-                        <button class="btn-card btn-contratar-servico" data-service="Consultoria">Solicitar Proposta</button>
-                    </div>
-                    <div class="cartao-servico revelar">
-                        <div class="servico-icone">🎯</div>
-                        <h3>Gestão de Projetos</h3>
-                        <p>Coordenação ágil de equipes e processos para entregar projetos no prazo, no orçamento e com a qualidade que o cliente espera.</p>
-                        <button class="btn-card btn-contratar-servico" data-service="Projetos">Solicitar Proposta</button>
-                    </div>
-                    <div class="cartao-servico revelar">
-                        <div class="servico-icone">🚀</div>
-                        <h3>Transformação Digital</h3>
-                        <p>Implementação de ferramentas e processos modernos que aumentam a eficiência, reduzem retrabalho e tornam sua operação mais competitiva.</p>
-                        <button class="btn-card btn-contratar-servico" data-service="Digital">Solicitar Proposta</button>
-                    </div>
-                </div>
-                <div class="servicos-acao revelar">
-                    <a href="servicos.html" class="btn btn-primario">Ver Todas as Soluções</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="sobre" class="sobre">
-            <div class="conteiner">
-                <div class="card-sobre revelar">
-                    <h2 class="sobre-titulo-principal">SOBRE NÓS</h2>
-                    <p class="sobre-descricao">
-                        Empresa de consultoria focada em resultados mensuráveis — não vendemos horas, entregamos transformação.
-                    </p>
-
-                    <ul class="lista-sobre-detalhes">
-                        <li><span class="bullet-blue"></span><strong>Missão:</strong> Ajudar empresas a atingirem seu potencial com estratégia clara, execução disciplinada e acompanhamento próximo.</li>
-                        <li><span class="bullet-blue"></span><strong>Equipe:</strong> Consultores sêniores com experiência em diferentes setores, metodologias ágeis e gestão de mudança.</li>
-                        <li><span class="bullet-blue"></span><strong>Compromisso:</strong> Entregamos o que prometemos — prazo, orçamento e qualidade sem concessões nem surpresas.</li>
-                        <li><span class="bullet-blue"></span><strong>Método:</strong> Diagnóstico honesto, plano realista e execução acompanhada. Sem relatório de gaveta.</li>
-                    </ul>
-
-                    <div class="sobre-footer-grid">
-                        <div class="item-check">
-                            <h4><span class="icon-check">✓</span> Experiência Comprovada</h4>
-                            <p>Projetos entregues em empresas de diferentes portes e segmentos.</p>
+            <div class="container">
+                <div class="hero__inner">
+                    <div data-reveal>
+                        <span class="hero__tag">Agência Digital</span>
+                        <h1 class="hero__title">Seu negócio merece mais do que uma presença online.</h1>
+                        <p class="hero__desc">Criamos experiências digitais que convertem visitantes em clientes — com estratégia, design e tecnologia trabalhando juntos.</p>
+                        <div class="hero__actions">
+                            <a href="#contato" class="btn btn--primary btn--lg">Quero começar →</a>
+                            <a href="portfolio.html" class="btn btn--outline btn--lg">Ver portfólio</a>
                         </div>
-                        <div class="item-check">
-                            <h4><span class="icon-check">✓</span> Método Estruturado</h4>
-                            <p>Processos auditados e documentados em cada etapa do projeto.</p>
-                        </div>
-                        <div class="item-check">
-                            <h4><span class="icon-check">✓</span> Foco em Resultado</h4>
-                            <p>Metas definidas no início e acompanhadas até o fim da entrega.</p>
+                    </div>
+                    <div class="hero__panel" data-reveal>
+                        <p class="hero__panel-title">Em números</p>
+                        <div class="hero__stats">
+                            <div class="hero__stat-item">
+                                <span class="hero__stat-num">120+</span>
+                                <span class="hero__stat-label">clientes atendidos</span>
+                            </div>
+                            <div class="hero__stat-item">
+                                <span class="hero__stat-num">200+</span>
+                                <span class="hero__stat-label">projetos entregues</span>
+                            </div>
+                            <div class="hero__stat-item">
+                                <span class="hero__stat-num">98%</span>
+                                <span class="hero__stat-label">taxa de satisfação</span>
+                            </div>
+                            <div class="hero__stat-item">
+                                <span class="hero__stat-num">5 anos</span>
+                                <span class="hero__stat-label">de experiência</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="portfolio">
-            <div class="conteiner">
-                <div class="secao-cabecalho revelar">
-                    <h2>Casos de Sucesso</h2>
-                    <p>Projetos que geraram resultados reais para clientes em diferentes segmentos.</p>
-                </div>
-                <div class="portfolio-grid">
-                    <div class="cartao-portfolio revelar">
-                        <div class="portfolio-imagem"></div>
-                        <div class="portfolio-conteudo">
-                            <h3>Reestruturação Operacional</h3>
-                            <p>Redesenho de processos internos com implementação de indicadores de desempenho e redução de retrabalho.</p>
-                        </div>
+        <!-- STATS BAR -->
+        <div class="stats-bar">
+            <div class="container">
+                <div class="stats-bar__grid">
+                    <div class="stats-bar__item">
+                        <div class="stats-bar__num">120+</div>
+                        <div class="stats-bar__label">Clientes</div>
                     </div>
-                    <div class="cartao-portfolio revelar">
-                        <div class="portfolio-imagem"></div>
-                        <div class="portfolio-conteudo">
-                            <h3>Expansão de Mercado</h3>
-                            <p>Estratégia de entrada em novo segmento com análise competitiva e roadmap de execução acompanhado.</p>
-                        </div>
+                    <div class="stats-bar__item">
+                        <div class="stats-bar__num">200+</div>
+                        <div class="stats-bar__label">Projetos</div>
                     </div>
-                    <div class="cartao-portfolio revelar">
-                        <div class="portfolio-imagem"></div>
-                        <div class="portfolio-conteudo">
-                            <h3>Transformação Digital</h3>
-                            <p>Plataforma de gestão integrada que centralizou dados e aumentou a produtividade da equipe operacional.</p>
-                        </div>
+                    <div class="stats-bar__item">
+                        <div class="stats-bar__num">98%</div>
+                        <div class="stats-bar__label">Satisfação</div>
+                    </div>
+                    <div class="stats-bar__item">
+                        <div class="stats-bar__num">5 anos</div>
+                        <div class="stats-bar__label">De experiência</div>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <div class="portfolio-acao revelar">
-                    <p>Cada projeto é único — veja como ajudamos empresas como a sua.</p>
-                    <a href="portfolio.html" class="btn btn-outline">Ver todos os casos</a>
+        <!-- SERVICES -->
+        <section class="services">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2 class="section-title">O que fazemos</h2>
+                    <p class="section-sub">Soluções sob medida para empresas que querem crescer com método e consistência — não com sorte.</p>
+                </div>
+                <div class="services__grid" data-reveal>
+                    <div class="service-card">
+                        <span class="service-card__index">01</span>
+                        <h3 class="service-card__title">Sites & Lojas Virtuais</h3>
+                        <p class="service-card__desc">Do wireframe ao ar: sites rápidos, responsivos e prontos para vender. Não fazemos só design — fazemos ferramenta de negócio.</p>
+                        <a href="servicos.html" class="btn btn--outline btn--sm">Saiba mais →</a>
+                    </div>
+                    <div class="service-card">
+                        <span class="service-card__index">02</span>
+                        <h3 class="service-card__title">Design & Identidade</h3>
+                        <p class="service-card__desc">Visual que para no scroll e faz o cliente lembrar de você. Marca consistente é o que diferencia quem vende de quem é esquecido.</p>
+                        <a href="servicos.html" class="btn btn--outline btn--sm">Saiba mais →</a>
+                    </div>
+                    <div class="service-card">
+                        <span class="service-card__index">03</span>
+                        <h3 class="service-card__title">Marketing de Conteúdo</h3>
+                        <p class="service-card__desc">Presença digital consistente que atrai, engaja e converte. Estratégia de longo prazo — sem atalhos, sem promessa vazia.</p>
+                        <a href="servicos.html" class="btn btn--outline btn--sm">Saiba mais →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section class="how">
+            <div class="container">
+                <div class="section-head section-head--center" data-reveal>
+                    <h2 class="section-title">Como funciona</h2>
+                    <p class="section-sub">Processo claro, sem surpresas — você acompanha cada etapa do início ao lançamento.</p>
+                </div>
+                <div class="steps">
+                    <div class="step" data-reveal>
+                        <div class="step__num">01</div>
+                        <h3 class="step__title">Diagnóstico</h3>
+                        <p class="step__desc">Antes de qualquer linha de código, entendemos seu negócio, seu público e seus objetivos reais. Nada genérico.</p>
+                    </div>
+                    <div class="step" data-reveal>
+                        <div class="step__num">02</div>
+                        <h3 class="step__title">Criação</h3>
+                        <p class="step__desc">Design, desenvolvimento e conteúdo com sua aprovação em cada etapa. Sem entrega surpresa no final.</p>
+                    </div>
+                    <div class="step" data-reveal>
+                        <div class="step__num">03</div>
+                        <h3 class="step__title">Lançamento</h3>
+                        <p class="step__desc">Projeto no ar, relatório de performance e suporte contínuo. O trabalho não para com a entrega.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2 class="section-title">O que dizem nossos clientes</h2>
+                </div>
+                <div class="testimonials__grid">
+                    <div class="testimonial-card" data-reveal>
+                        <p class="testimonial-card__quote">"Desde que lançamos o site novo, nossas consultas aumentaram três vezes. O processo foi rápido, sem burocracia e o resultado superou tudo que eu esperava."</p>
+                        <div>
+                            <div class="testimonial-card__author">João R.</div>
+                            <div class="testimonial-card__role">CEO — Empresa XYZ</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card" data-reveal>
+                        <p class="testimonial-card__quote">"Profissionalismo do início ao fim. Entregaram antes do prazo combinado, o site carrega rápido e o design é exatamente o que eu queria para a minha marca."</p>
+                        <div>
+                            <div class="testimonial-card__author">Maria C.</div>
+                            <div class="testimonial-card__role">Fundadora — Estúdio ABC</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA BANNER -->
+        <section class="cta-banner">
+            <div class="container">
+                <div class="cta-banner__inner" data-reveal>
+                    <span class="cta-banner__label">Próximo passo</span>
+                    <h2 class="cta-banner__title">Pronto para crescer?</h2>
+                    <p class="cta-banner__sub">Vamos conversar sobre o seu próximo projeto. Sem compromisso, sem enrolação.</p>
+                    <a href="#contato" class="btn btn--primary btn--lg">Falar com a equipe →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- DEMO FORM -->
+        <section class="demo-form-section" id="contato">
+            <div class="container">
+                <div class="demo-form-section__inner">
+                    <div data-reveal>
+                        <span class="demo-form-info__tag">Demonstração</span>
+                        <h2 class="demo-form-info__title">Formulário de contato</h2>
+                        <p class="demo-form-info__desc">Exemplo de formulário integrado e responsivo — com validação nativa, feedback visual e layout adaptado a qualquer dispositivo. Em um projeto real, conectado ao e-mail ou CRM da empresa.</p>
+                    </div>
+                    <form class="demo-form" data-reveal onsubmit="return false">
+                        <div class="demo-form__row">
+                            <div class="demo-form__group">
+                                <label class="demo-form__label" for="f-nome">Nome</label>
+                                <input type="text" id="f-nome" placeholder="Seu nome" autocomplete="name">
+                            </div>
+                            <div class="demo-form__group">
+                                <label class="demo-form__label" for="f-email">Email</label>
+                                <input type="email" id="f-email" placeholder="seu@email.com" autocomplete="email">
+                            </div>
+                        </div>
+                        <div class="demo-form__group">
+                            <label class="demo-form__label" for="f-msg">Mensagem</label>
+                            <textarea id="f-msg" placeholder="Sobre o que você quer conversar?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary">Enviar mensagem →</button>
+                        <p class="demo-form__note">* Demonstração — não envia dados reais</p>
+                    </form>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <div id="modalContato" class="modal">
-        <div class="modal-conteudo">
-            <button class="fechar-modal">&times;</button>
-
-            <span class="modal-header-brand">EMPRESA DE SERVIÇOS</span>
-
-            <h3 class="modal-titulo">Fale com um Especialista</h3>
-            <p class="modal-subtitulo">Preencha os dados abaixo e entraremos em contato em até 24 horas.</p>
-
-            <form class="form-contato" id="formContato">
-                <label>Nome Completo</label>
-                <input type="text" placeholder="Digite seu nome" required>
-
-                <label>E-mail</label>
-                <input type="email" placeholder="seu@email.com" required>
-
-                <label>Telefone</label>
-                <input type="tel" placeholder="(DDD) 99999-9999" required>
-
-                <label>Como podemos ajudar?</label>
-                <select id="selectServicoModal" required>
-                    <option value="" disabled selected>Selecione uma opção</option>
-                    <option value="Consultoria">Consultoria Estratégica</option>
-                    <option value="Projetos">Gestão de Projetos</option>
-                    <option value="Digital">Transformação Digital</option>
-                    <option value="Outro">Outro / Não sei ainda</option>
-                </select>
-
-                <label>Conte um pouco sobre seu negócio</label>
-                <textarea placeholder="Qual é o principal desafio que você quer resolver?" rows="3"></textarea>
-
-                <button type="submit" class="btn-enviar-modal">Enviar Mensagem</button>
-            </form>
-        </div>
-    </div>
-
-    <footer class="rodape">
-        <div class="conteiner">
-            <div class="rodape-grid">
-                <div class="rodape-coluna">
-                    <span class="logo-footer">EMPRESA DE SERVIÇOS</span>
-                    <p>Consultoria estratégica, gestão de projetos e transformação digital para empresas que buscam crescimento.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div>
+                    <span class="footer__logo">Empresa de Serviços</span>
+                    <p class="footer__desc">Criamos experiências digitais que convertem visitantes em clientes, com estratégia, design e tecnologia.</p>
                 </div>
-                <div class="rodape-coluna">
-                    <h4>Navegação</h4>
-                    <ul class="rodape-links">
-                        <li><a href="servicos.html">› Serviços</a></li>
-                        <li><a href="portfolio.html">› Portfólio</a></li>
-                        <li><a href="#sobre">› Sobre</a></li>
+                <div>
+                    <span class="footer__col-title">Navegação</span>
+                    <ul class="footer__links">
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="portfolio.html">Portfólio</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
                 </div>
-                <div class="rodape-coluna">
-                    <h4>Contato</h4>
-                    <ul class="lista-contato">
-                        <li>📍 Lorem Ipsum, Cidade, XX</li>
-                        <li>✉️ contato@empresa.com.br</li>
-                        <li>📞 (00) 00000-0000</li>
-                    </ul>
+                <div>
+                    <span class="footer__col-title">Contato</span>
+                    <div class="footer__contact">
+                        <span>contato@empresa.com.br</span>
+                        <span>(00) 00000-0000</span>
+                        <span>Cidade, XX</span>
+                    </div>
                 </div>
             </div>
-            <div class="rodape-inferior"><p>&copy; <span id="ano"></span> Empresa de Serviços.</p></div>
+            <div class="footer__bottom">
+                <span class="footer__copy">© <span id="ano"></span> Empresa de Serviços. Todos os direitos reservados.</span>
+            </div>
         </div>
     </footer>
 
